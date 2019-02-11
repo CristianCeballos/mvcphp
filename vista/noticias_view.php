@@ -23,7 +23,7 @@
     
     <?php
 
-    foreach($matriz_productos as $registro){
+    foreach($matriz_noticias as $registro){
 
         echo "<tbody><td>" . $registro["titulo"] . "</td>";
         echo "<td>" . $registro["descripcion"] . "</td>";

@@ -1,9 +1,9 @@
 <?php
 
-    class Productos_modelo{
+    class Noticias_modelo{
 
         private $db;
-        private $productos;
+        private $noticias;
 
         public function __construct(){
 
@@ -11,22 +11,22 @@
 
             $this->db=conectar::conexion();
 
-            $this->productos=array();
+            $this->noticias=array();
 
         }
 
-        public function get_productos(){
+        public function get_noticias(){
 
             $consulta=$this->db->query("select * from personas");
 
             while($filas=$consulta->fetch(PDO::FETCH_ASSOC)){
 
-                $this->productos[]=$filas;
+                $this->noticias[]=$filas;
 
 
             }
 
-            return $this->productos;
+            return $this->noticias;
         }
 
     }

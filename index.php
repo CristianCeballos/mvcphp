@@ -11,7 +11,7 @@
 <h1>Modelo vista controlador</h1>
 
 <?php
-    require_once("controlador/productos_controlador.php");
+    require_once("controlador/noticias_controlador.php");
 
 ?>
 </body>
